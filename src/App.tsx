@@ -1,40 +1,28 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import icon from '../assets/icon.svg';
+import icon from '../assets/Logo_valheim.png';
 import './App.global.css';
+
+const launchGame = () => {
+  // Check for launcher updates??
+  // Check for mod updates
+  // Launch game
+}
 
 const Hello = () => {
   return (
-    <div>
+    <div className="centered">
       <div className="Hello">
-        <img width="200px" alt="icon" src={icon} />
+        <img width="550px" alt="icon" src={icon} />
       </div>
-      <h1>electron-react-boilerplate</h1>
+      <h1>Server: Dragonball </h1>
       <div className="Hello">
-        <a
-          href="https://electron-react-boilerplate.js.org/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button type="button">
+          <button type="button" onClick={launchGame}>
             <span role="img" aria-label="books">
-              📚
+              
             </span>
-            Read our docs
+            Launch Game
           </button>
-        </a>
-        <a
-          href="https://github.com/sponsors/electron-react-boilerplate"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button type="button">
-            <span role="img" aria-label="books">
-              🙏
-            </span>
-            Donate
-          </button>
-        </a>
       </div>
     </div>
   );
