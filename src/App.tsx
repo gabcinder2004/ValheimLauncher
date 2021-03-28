@@ -2,12 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import icon from '../assets/Logo_valheim.png';
 import './App.global.css';
+import {launchGame} from './launchGame';
 
-const launchGame = () => {
-  // Check for launcher updates??
-  // Check for mod updates
-  // Launch game
-}
 
 const Hello = () => {
   return (
