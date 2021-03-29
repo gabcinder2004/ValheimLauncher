@@ -2,8 +2,25 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import icon from '../assets/Logo_valheim.png';
 import './App.global.css';
-import {launchGame} from './launchGame';
+import {getSteamPath, launchGame} from './launchGame';
 
+export const onLaunchButtonPressed = () => {
+  // Check for launcher updates??
+
+  // Check for mod updates
+
+  // Launch game
+  getSteamPath()
+    .then((path) => {
+      return launchGame(path);
+    })
+    .then((status) => {
+      console.log(status);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+};
 
 const Hello = () => {
   return (
@@ -13,7 +30,7 @@ const Hello = () => {
       </div>
       <h1>Server: Dragonball </h1>
       <div className="Hello">
-          <button type="button" onClick={launchGame}>
+          <button type="button" onClick={onLaunchButtonPressed}>
             <span role="img" aria-label="books">
               
             </span>
