@@ -15,7 +15,9 @@ import { app, BrowserWindow, shell } from 'electron';
 import { autoUpdater } from 'electron-updater';
 import log from 'electron-log';
 import MenuBuilder from './menu';
-require('update-electron-app')()
+require('update-electron-app')({
+  repo: 'gabcinder2004/ValheimLauncher'
+})
 
 export default class AppUpdater {
   constructor() {
