@@ -1,7 +1,7 @@
 {
   "name": "valheim-launcher",
   "productName": "Valheim Launcher",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Valheim Launcher app straight to dragonball server",
   "main": "./main.prod.js",
   "author": {
