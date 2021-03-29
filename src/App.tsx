@@ -28,7 +28,7 @@ const Hello = () => {
       <div className="Hello">
         <img width="550px" alt="icon" src={icon} />
       </div>
-      <h1>Server: Dragonball </h1>
+      <h1>By Gab </h1>
       <div className="Hello">
           <button type="button" onClick={onLaunchButtonPressed}>
             <span role="img" aria-label="books">
