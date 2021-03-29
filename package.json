@@ -92,12 +92,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/electron-react-boilerplate/electron-react-boilerplate.git"
+    "url": "git+https://github.com/gabcinder2004/ValheimLauncher.git"
   },
   "author": {
     "name": "Gab",
     "email": "Gab@gmail.com",
-    "url": "https://electron-react-boilerplate.js.org"
+    "url": "https://github.com/gabcinder2004"
   },
   "contributors": [
     {
@@ -251,7 +251,8 @@
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "regenerator-runtime": "^0.13.5",
-    "source-map-support": "^0.5.19"
+    "source-map-support": "^0.5.19",
+    "update-electron-app": "^2.0.1"
   },
   "devEngines": {
     "node": ">=10.x",
